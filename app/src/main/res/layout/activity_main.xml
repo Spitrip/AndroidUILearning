@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,12 +7,29 @@
     android:gravity="top|right">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:id="@+id/imageView"
         android:src="@drawable/img"
-        android:minWidth="250dp"
-        android:minHeight="250dp"
-        android:maxHeight="250px"
-        android:maxWidth="250px" />
-</RelativeLayout>
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:maxHeight="25dp"
+        android:maxWidth="25dp"
+        android:contentDescription="&quot;something here&quot;"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This demo uses Gravity Property"
+        android:id="@+id/textView"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/btnExit"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="quitApplication" />
+</FrameLayout>

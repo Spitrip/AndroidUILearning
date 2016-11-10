@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UIExerciseOne</string>
+    <string name="random_image_from_github">random image from github</string>
 </resources>
