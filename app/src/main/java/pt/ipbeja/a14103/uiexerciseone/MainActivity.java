@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         if(posIndex >= this.positions.length)
             posIndex = 0;
         posIndex++;
+        // Add logic to keep old params and change the gravity only.
         ActionBar.LayoutParams var = new ActionBar.LayoutParams(this.positions[this.posIndex]);
         img.setLayoutParams(var);
     }
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView img = (ImageView)findViewById(R.id.imageView);
+
+        img.bringToFront();
     }
 
     @Override
